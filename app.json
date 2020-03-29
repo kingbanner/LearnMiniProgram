@@ -4,35 +4,31 @@
     "pages/about/about",
     "pages/profile/profile",
     "pages/category/category"
-    
   ],
   "window": {
     "navigationBarBackgroundColor": "#ff5777",
-    "navigationBarTextStyle": "white", 
-    "navigationBarTitleText": "分类",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "好玩商城",
     "backgroundColor": "orange",
     "backgroundTextStyle": "dark",
-    
-    "enablePullDownRefresh": false,
-    "enablePullDownRefresh": true
+    "enablePullDownRefresh": false  
   },
   "tabBar": {
     "selectedColor": "#FF5777",
-    "list": [{
-      "pagePath": "pages/home/home",
-      "text": "主页",
-      "iconPath": "assets/tabbar/home.png",
-      "selectedIconPath": "assets/tabbar/home_active.png"
-      
-    },
-    {
-      "pagePath": "pages/category/category",
-      "text": "分类",
-      "iconPath": "assets/tabbar/category.png",
-      "selectedIconPath": "assets/tabbar/category_active.png"
-      
-    }
-  ]
-  }
- 
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "主页",
+        "iconPath": "assets/tabbar/home.png",
+        "selectedIconPath": "assets/tabbar/home_active.png"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "text": "分类",
+        "iconPath": "assets/tabbar/category.png",
+        "selectedIconPath": "assets/tabbar/category_active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap94.json"
 }

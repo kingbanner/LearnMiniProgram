@@ -9,3 +9,8 @@
 <view>当前计数：{{counter}}</view>
 <button size="mini" bindtap='handleBtnClick'>+</button>
 <button size="mini" bindtap='handleSubtraction'>-</button>
+<!--获取用户信息的第二种方式-->
+<button size="mini" open-type="getUserInfo" bindgetuserinfo='handleGetUserInfo'>获取用户信息授权</button>
+<!--获取用户信息的第三种方式-->
+<open-data  type='userNickName'></open-data>
+<open-data  type='userAvatarUrl'></open-data>
