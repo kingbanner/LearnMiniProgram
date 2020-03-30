@@ -1,0 +1,7 @@
+<!--pages/button/button.wxml-->
+<button size="mini" type="primary" form-type="submit">press</button>
+<button size="mini" type="warn" form-type="reset" plain>press</button>
+<button size="mini" type="default" disabled>press</button>
+<button size="mini" type="default" loading="{{isloading}}">press</button>
+<!--hover class-->
+<button hover-class="pressed">按下样式</button>

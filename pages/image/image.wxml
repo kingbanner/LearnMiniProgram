@@ -1,0 +1,14 @@
+<!--
+1.image可以写成单标签，也可以写成双标签
+2.image默认有自己的大小：320*240
+3、image属于行内块级元素 inline-block
+-->
+<image src="/assets/images/ttt.jpg" mode="top"></image>
+<image src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"/>
+<button bindtap="handleChooseAlbum">选中图片</button>
+<image src="{{upload_image_path}}"></image>
+<!--3.bindload 监听图片加载完成-->
+<!--4.lazy-load 图片懒加载-->
+<image  wx:for="{{5}}" src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg" bindload='handleImageLoad' lazy-load></image>
+<!--5.show-menu-by-longpress 长按识别小程序码-->
+<image show-menu-by-longpress src="/assets/images/ttt.jpg"></image>

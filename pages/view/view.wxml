@@ -1,0 +1,9 @@
+<!--pages/view/view.wxml-->
+<!--view是一个容器，可以放其他的组件，独占一行-->
+<!--hover-stop-propagation阻止父组件的点击状态-->
+<view class="box">哈 哈 合</view>
+<view  class="box2" hover-class="box2-hover">呵呵呵呵呵
+<view  class="box1" hover-class="box1-havor" hover-start-time="3000" hover-stay-time="2000" hover-stop-propagation>呆呵呵</view>
+</view>
+
+

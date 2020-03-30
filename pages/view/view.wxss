@@ -1,0 +1,15 @@
+/* pages/view/view.wxss */
+.box{ background-color: red;}
+.box1{background-color: yellow; color:black;
+width: 100px;height:100px;
+}
+.box1-havor{background-color: purple; color:white;
+  width: 100px;height:100px;font-size: 16px;font-weight: bold;
+  }
+
+  .box2{background-color: blue; color:black;
+    width: 200px;height:200px;
+    }
+    .box2-hover{background-color: orange; color:white;
+      width: 200px;height:200px;
+      }

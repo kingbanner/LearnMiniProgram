@@ -1,0 +1,17 @@
+<!--pages/text/text.wxml-->
+<!--基本使用,换行需要加 \n -->
+<text>hello world\n</text>
+<text>你好世界\n</text>
+<!--2. selectable -->
+<text selectable="{{true}}">我可以被选中\n</text>
+<!--小程序中组件属性如果不加{{true}}，则默认为true,如果不加属性则默认为false-->
+<text selectable>我也可以被选中\n</text>
+<text>我不可以被选中\n</text>
+<!--3.space 决定文本空格的大小 -->
+<!--emsp 一个中文 字符大小-->
+<!--ensp 半个中文 字符大小-->
+<text space='nbsp'>空格 示例1\n</text>
+<text space='emsp'>空格 示例2\n</text>
+<text space='ensp'>空格 示例3\n</text>
+<!--4.decode J 是否解码文本 -->
+<text decode>5 &gt; 3 </text>

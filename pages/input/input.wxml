@@ -1,0 +1,12 @@
+<input ></input>
+<!--决定用户输入键盘的类型（文本、数字、文本加数字）-->
+<text>姓名：</text><input type="number"></input>
+<input type="text"></input>
+<input type="digit"></input>
+<input type="idcard"></input>
+<input password></input>
+<input password placeholder="请输入密码"></input>
+<!--confirm-type 键盘右下角字的设置-->
+<input type="idcard" confirm-type="done"></input>
+<!--input绑定事件-->
+<input bindinput="handleInput" bindfocus="handleFocus" bindblur="handleBlur"></input>
