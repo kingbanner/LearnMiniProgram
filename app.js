@@ -11,12 +11,12 @@ App({
       success:function(res){
         console.log(res.userInfo.nickName)
       }
-    }),
-    setTimeout(function(){  //人为制造一个错误，并将
-      const err =new Error()
-      throw err
-    },3000)
-  },
+    })
+  //   setTimeout(function(){  //人为制造一个错误，并将
+  //     const err =new Error()
+  //     throw err
+  //   },3000)
+   },
 
   /**
    * 当小程序启动，或从后台进入前台显示，会触发 onShow

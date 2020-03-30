@@ -35,24 +35,20 @@ Page({
   /*1.监听页面的生命周期函数*/
   //页面被加载出来时
   onload(){
-   console.log('页面被加载'),
-    wx.request({
-     url: 'http://apis.juhe.cn/mobile/get?phone=13156578228&key=7e02597a2242ff1faa6122dedb98b07c',
-     success:(res)=>{
-      console.log(res)
-      //const data = res.data.result,
-      //this.data.list=data,
-     // this.setData({
-     //    list:data
-     // })
-     }
-
-   })
+   console.log('页面被加载')
   },
   //页面被显示出来时
   onShow(){
-
-  },
+     //发送一个http或https请求，并将返回的数据放入一个数组中。
+   wx.request({
+      url: 'https://apis.juhe.cn/mobile/get?phone=13156578228&key=7e02597a2242ff1faa6122dedb98b07c',
+      success: (res) => {
+       console.log(res.data.result),
+       // const data2 = res.data.result,
+        this.setData({ list:res.data.result})
+      }
+  })
+},
   onHide(){
 
   },
@@ -68,6 +64,11 @@ Page({
 
   /*4.监听其他事件*/
   onPageScroll(obj){
-     console.log(obj)
+     console.log(obj)  },
+  onReachBottom(){
+     console.log('已到达页面底部')
+  } ,
+  onPullDownRefresh(){
+     console.log('下拉刷新 ')
   }
 })

@@ -4,6 +4,9 @@
 <view>my age:{{age+10}}</view>
 
 <!--列表展示，数组展示 wx:for-->
+<view wx:for="{{list}}">{{item.province}}</view>
+<view wx:for="{{list}}">{{item.city}}</view>
+<view wx:for="{{list}}">{{item.company}}</view>
 <view wx:for="{{students}}">{{item.name}}--{{item.age}}</view>
 <!--事件监听，改变data-->
 <view>当前计数：{{counter}}</view>
@@ -14,3 +17,4 @@
 <!--获取用户信息的第三种方式-->
 <open-data  type='userNickName'></open-data>
 <open-data  type='userAvatarUrl'></open-data>
+
